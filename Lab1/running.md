@@ -26,11 +26,11 @@ copy the following lines into it
     <node pkg="turtlesim" type="turtlesim_node" name="sim"/>
     <node pkg="turtlesim" type="turtle_teleop_key" name="teleop" output="screen"/>
     
-    <node name="turtle1_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py"respawn="false" output="screen" >
+    <node name="turtle1_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py" respawn="false" output="screen" >
         <param name="turtle" type="string" value="turtle1" />
     </node>
     
-    <node name="turtle2_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py"respawn="false" output="screen" >
+    <node name="turtle2_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py" respawn="false" output="screen" >
         <param name="turtle" type="string" value="turtle2" /> 
     </node>
 </launch>
@@ -117,11 +117,11 @@ copy the following lines into it
     <node pkg="turtlesim" type="turtlesim_node" name="sim"/>
     <node pkg="turtlesim" type="turtle_teleop_key" name="teleop" output="screen"/>
     
-    <node name="turtle1_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py"respawn="false" output="screen" >
+    <node name="turtle1_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py" respawn="false" output="screen" >
         <param name="turtle" type="string" value="turtle1" />
     </node>
     
-    <node name="turtle2_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py"respawn="false" output="screen" >
+    <node name="turtle2_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py" respawn="false" output="screen" >
         <param name="turtle" type="string" value="turtle2" /> 
     </node>
 
@@ -204,11 +204,11 @@ copy the following lines into it
     <node pkg="turtlesim" type="turtlesim_node" name="sim"/>
     <node pkg="turtlesim" type="turtle_teleop_key" name="teleop" output="screen"/>
     
-    <node name="turtle1_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py"respawn="false" output="screen" >
+    <node name="turtle1_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py" respawn="false" output="screen" >
         <param name="turtle" type="string" value="turtle1" />
     </node>
     
-    <node name="turtle2_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py"respawn="false" output="screen" >
+    <node name="turtle2_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py" respawn="false" output="screen" >
         <param name="turtle" type="string" value="turtle2" /> 
     </node>
 
@@ -293,11 +293,11 @@ copy the following lines into it
     <node pkg="turtlesim" type="turtlesim_node" name="sim"/>
     <node pkg="turtlesim" type="turtle_teleop_key" name="teleop" output="screen"/>
     
-    <node name="turtle1_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py"respawn="false" output="screen" >
+    <node name="turtle1_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py" respawn="false" output="screen" >
         <param name="turtle" type="string" value="turtle1" />
     </node>
     
-    <node name="turtle2_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py"respawn="false" output="screen" >
+    <node name="turtle2_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py" respawn="false" output="screen" >
         <param name="turtle" type="string" value="turtle2" /> 
     </node>
 

@@ -71,6 +71,11 @@ catkin_make
 ## Running the broadcasters
 Move to the root of the ROS workspace and launch the program
 
+
+```sh
+source devel/setup.bash
+```
+
 ```sh
 roslaunch lab_1_tf broadcaster_demo.launch
 ```
@@ -157,6 +162,11 @@ catkin_make
 <br>
 
 ## Running the listener
+
+```sh
+source devel/setup.bash
+```
+
 Move to the root of the ROS workspace and launch the program
 
 ```sh
@@ -245,6 +255,10 @@ catkin_make
 Move to the root of the ROS workspace and launch the program
 
 ```sh
+source devel/setup.bash
+```
+
+```sh
 roslaunch lab_1_tf broadcaster_listener_static_demo.launch
 ```
 
@@ -328,6 +342,10 @@ catkin_make
 ## Running the dynamic frame
 
 Move to the root of the ROS workspace and launch the program
+
+```sh
+source devel/setup.bash
+```
 
 ```sh
 roslaunch lab_1_tf broadcaster_listener_dynamic_demo.launch

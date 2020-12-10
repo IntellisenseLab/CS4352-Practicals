@@ -26,11 +26,11 @@ copy the following lines into it
     <node pkg="turtlesim" type="turtlesim_node" name="sim"/>
     <node pkg="turtlesim" type="turtle_teleop_key" name="teleop" output="screen"/>
     
-    <node name="turtle1_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py"respawn="false" output="screen" >
+    <node name="turtle1_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py" respawn="false" output="screen" >
         <param name="turtle" type="string" value="turtle1" />
     </node>
     
-    <node name="turtle2_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py"respawn="false" output="screen" >
+    <node name="turtle2_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py" respawn="false" output="screen" >
         <param name="turtle" type="string" value="turtle2" /> 
     </node>
 </launch>
@@ -70,6 +70,11 @@ catkin_make
 
 ## Running the broadcasters
 Move to the root of the ROS workspace and launch the program
+
+
+```sh
+source devel/setup.bash
+```
 
 ```sh
 roslaunch lab_1_tf broadcaster_demo.launch
@@ -112,11 +117,11 @@ copy the following lines into it
     <node pkg="turtlesim" type="turtlesim_node" name="sim"/>
     <node pkg="turtlesim" type="turtle_teleop_key" name="teleop" output="screen"/>
     
-    <node name="turtle1_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py"respawn="false" output="screen" >
+    <node name="turtle1_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py" respawn="false" output="screen" >
         <param name="turtle" type="string" value="turtle1" />
     </node>
     
-    <node name="turtle2_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py"respawn="false" output="screen" >
+    <node name="turtle2_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py" respawn="false" output="screen" >
         <param name="turtle" type="string" value="turtle2" /> 
     </node>
 
@@ -157,6 +162,11 @@ catkin_make
 <br>
 
 ## Running the listener
+
+```sh
+source devel/setup.bash
+```
+
 Move to the root of the ROS workspace and launch the program
 
 ```sh
@@ -194,11 +204,11 @@ copy the following lines into it
     <node pkg="turtlesim" type="turtlesim_node" name="sim"/>
     <node pkg="turtlesim" type="turtle_teleop_key" name="teleop" output="screen"/>
     
-    <node name="turtle1_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py"respawn="false" output="screen" >
+    <node name="turtle1_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py" respawn="false" output="screen" >
         <param name="turtle" type="string" value="turtle1" />
     </node>
     
-    <node name="turtle2_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py"respawn="false" output="screen" >
+    <node name="turtle2_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py" respawn="false" output="screen" >
         <param name="turtle" type="string" value="turtle2" /> 
     </node>
 
@@ -245,6 +255,10 @@ catkin_make
 Move to the root of the ROS workspace and launch the program
 
 ```sh
+source devel/setup.bash
+```
+
+```sh
 roslaunch lab_1_tf broadcaster_listener_static_demo.launch
 ```
 
@@ -279,11 +293,11 @@ copy the following lines into it
     <node pkg="turtlesim" type="turtlesim_node" name="sim"/>
     <node pkg="turtlesim" type="turtle_teleop_key" name="teleop" output="screen"/>
     
-    <node name="turtle1_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py"respawn="false" output="screen" >
+    <node name="turtle1_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py" respawn="false" output="screen" >
         <param name="turtle" type="string" value="turtle1" />
     </node>
     
-    <node name="turtle2_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py"respawn="false" output="screen" >
+    <node name="turtle2_tf_broadcaster" pkg="lab_1_tf" type="broadcaster.py" respawn="false" output="screen" >
         <param name="turtle" type="string" value="turtle2" /> 
     </node>
 
@@ -328,6 +342,10 @@ catkin_make
 ## Running the dynamic frame
 
 Move to the root of the ROS workspace and launch the program
+
+```sh
+source devel/setup.bash
+```
 
 ```sh
 roslaunch lab_1_tf broadcaster_listener_dynamic_demo.launch

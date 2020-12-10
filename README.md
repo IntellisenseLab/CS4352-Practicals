@@ -14,3 +14,12 @@ TF listener creation - [here](Lab1/listener.md) \
 Additional static frame - [here](Lab1/static_frame.md) \
 Additional dynamic frame - [here](Lab1/dynamic_frame.md) \
 Compiling and Running - [here](/Lab1/running.md)
+
+## Lab 2
+
+This lab focuses on learning about the relationship between 3 Angle representation, Quaternions and ROS. This lab exercise will also give an understating of ROS Server client architecture
+
+Package Creation - [here](/Lab2/creation.md) \
+Srv creation - [here](Lab2/srv.md) \
+Server and Client creation - [here](/Lab2/server_and_client.md) \
+Exercise - [here](/Lab2/activity.md)

@@ -1,8 +1,6 @@
 # Client Server Python Implementation
 
-```sh
-mkdir scripts
-```
+<br>
 
 ## Server creation
 

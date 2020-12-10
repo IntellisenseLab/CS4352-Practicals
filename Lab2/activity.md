@@ -57,5 +57,5 @@ First complete all the steps upto now and make sure the system works correctly. 
 1.57, 0.00, 1.57, zyx \
 0.00, 1.57, 1.57, zyx 
 
-
+submit a pdf named lab2_<index>.pdf at the end of the practical 
 

@@ -55,3 +55,33 @@ or
 ```sh
 catkin_make
 ```
+
+## Run the server
+
+Go to root of the workspace
+
+```sh
+cd ~/robotics/
+```
+```sh
+source devel/setup.bash
+```
+or
+```sh
+rosrun lab_2_3dPose server.py
+```
+
+## Run the client
+
+Go to root of the workspace on a new terminal
+
+```sh
+cd ~/robotics/
+```
+```sh
+source devel/setup.bash
+```
+or
+```sh
+rosrun lab_2_3dPose client.py
+```

@@ -10,7 +10,7 @@ def convert (a, b, c, format):
     return tf.transformations.quaternion_from_euler(a, b, c, 'r'+format)
 
 def handle_euler(req):
-    print("Recieved [%s, %s, %s, %s]" %(req.roll, req.pitch, req.yaw, req.format))
+    print("Recieved [%s, %s, %s, %s]" %(req.a, req.b, req.c, req.format))
 
     result = convert(req.a, req.b, req.c, req.format)
     

@@ -56,7 +56,15 @@ catkin_make
 
 ## Run the server
 
-Go to root of the workspace
+Go to root of the workspace and run
+
+```sh
+roscore
+```
+
+## Run the server
+
+Go to root of the workspace and on a new terminal
 
 ```sh
 cd ~/robotics/
@@ -71,7 +79,7 @@ rosrun lab_2_3dPose server.py
 
 ## Run the client
 
-Go to root of the workspace on a new terminal
+Go to root of the workspace and on a new terminal
 
 ```sh
 cd ~/robotics/

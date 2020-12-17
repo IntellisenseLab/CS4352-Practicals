@@ -23,3 +23,12 @@ Package Creation - [here](/Lab2/creation.md) \
 Srv creation - [here](Lab2/srv.md) \
 Server and Client creation - [here](/Lab2/server_and_client.md) \
 Exercise - [here](/Lab2/activity.md)
+
+## Lab 3
+
+This lab focuses on learning about the relationship between 3 Angle representation, Quaternions and ROS. This lab exercise will also give an understating of ROS Server client architecture
+
+Package Creation - [here](/Lab3/creation.md) \
+Modification - [here](/Lab3/modification.md) \
+Simulation - [here](Lab3/simulation.md) \
+Exercise - [here](/Lab3/activity.md)

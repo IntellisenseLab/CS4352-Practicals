@@ -62,7 +62,7 @@ Y       - 0.200\
 Z       - 0.260\
 time    - 2.0
 
-Move to Init position
+Move to Init position and try to reach given position
 
 X       - 0.200\
 Y       - 0.200\

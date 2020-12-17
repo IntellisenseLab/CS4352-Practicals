@@ -26,13 +26,6 @@ git clone https://github.com/ROBOTIS-GIT/open_manipulator_simulations.git
 git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git
 ```
 
-
-While inside the robotics/src folderCreate a ros package that depends on roscpp, rospy. (will have to add other dependencies later)
-
-```sh
-catkin_create_pkg lab_3_trajectories roscpp rospy
-```
-
 Move to workspace root and build the package
 
 ```sh
@@ -48,15 +41,3 @@ or
 ```sh
 catkin_make
 ```
-
-move inside the package and create a folder called scripts
-
-```sh
-cd robotics/src/lab_3_trajectories
-```
-
-```sh
-mkdir scripts
-```
-
-This folder will hold all the python scripts required by the nodes.

@@ -26,9 +26,33 @@ Exercise - [here](/Lab2/activity.md)
 
 ## Lab 3
 
-This lab focuses on learning about the relationship between 3 Angle representation, Quaternions and ROS. This lab exercise will also give an understating of ROS Server client architecture
+This lab focuses on setting up and getting an basic understanding of openmanipulator
 
 Package Creation - [here](/Lab3/creation.md) \
 Modification - [here](/Lab3/modification.md) \
 Simulation - [here](Lab3/simulation.md) \
 Exercise - [here](/Lab3/activity.md)
+
+## Lab 4
+
+This lab focuses on creating a service client for Joint space control
+
+Package Creation - [here](/Lab4/creation.md) \
+Simulation - [here](Lab4/simulation.md) \
+Exercise - [here](/Lab4/activity.md)
+
+## Lab 5
+
+This lab focuses on creating a service client for Task space control
+
+Package Creation - [here](/Lab5/creation.md) \
+Simulation - [here](Lab5/simulation.md) \
+Exercise - [here](/Lab5/activity.md)
+
+## Lab 6
+
+This lab focuses on creating a service client for joint space control
+
+Package Creation - [here](/Lab6/creation.md) \
+Simulation - [here](Lab6/simulation.md) \
+Exercise - [here](/Lab6/activity.md)

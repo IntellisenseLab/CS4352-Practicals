@@ -28,3 +28,17 @@ or
 ```sh
 catkin_make
 ```
+
+Install following package if you get following error,
+
+Error:
+
+```sh
+Could not load controller 'gripper_sub_position' because controller type 'effort_controllers/JointPositionController' does not exist.
+```
+
+Package to be installed:
+
+```sh
+sudo apt-get install ros-melodic-effort-controllers
+```

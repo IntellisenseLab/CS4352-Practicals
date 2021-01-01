@@ -49,3 +49,5 @@ roslaunch open_manipulator_control_gui open_manipulator_control_gui.launch
 ### Press "Actuator Enable"
 
 ### Press "Home Position"
+
+[<< Back to Main menu](../README.md)

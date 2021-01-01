@@ -60,3 +60,6 @@ source devel/setup.bash
 ```sh
 rosrun lab_6_trajectoryplanner planner.py
 ```
+
+
+[<< Back to Main menu](../README.md)

@@ -72,3 +72,6 @@ time    - 1.0
 ### Submit the recording with title lab3_(index)_task_space.mp4
 
 You can use vlc media player for screen recording [Tutorial on how to screen record with vlc](https://www.instructables.com/How-to-Record-Your-Screen-With-VLC-Media-Player/)
+
+
+[<< Back to Main menu](../README.md)

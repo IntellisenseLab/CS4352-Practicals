@@ -38,7 +38,7 @@ Exercise - [here](/Lab3/activity.md)
 This lab focuses on creating a service client for Joint space control
 
 Package Creation - [here](/Lab4/creation.md) \
-Simulation - [here](Lab4/simulation.md) \
+Client Creation - [here](Lab4/jont_client.md) \
 Exercise - [here](/Lab4/activity.md)
 
 ## Lab 5
@@ -46,7 +46,7 @@ Exercise - [here](/Lab4/activity.md)
 This lab focuses on creating a service client for Task space control
 
 Package Creation - [here](/Lab5/creation.md) \
-Simulation - [here](Lab5/simulation.md) \
+Client Creation - [here](Lab5/task_client.md) \
 Exercise - [here](/Lab5/activity.md)
 
 ## Lab 6
@@ -54,5 +54,5 @@ Exercise - [here](/Lab5/activity.md)
 This lab focuses on creating a service client for joint space control
 
 Package Creation - [here](/Lab6/creation.md) \
-Simulation - [here](Lab6/simulation.md) \
+Client Creation - [here](Lab6/planner.md) \
 Exercise - [here](/Lab6/activity.md)

@@ -9,7 +9,7 @@ cd robotics/src
 ```
 
 ```sh
-catkin_create_pkg lab_5_taskspacecontrol rospy roscpp std_msgs sensor_msgs open_manipulator_msgs
+catkin_create_pkg lab_5_taskspacecontrol rospy roscpp std_msgs sensor_msgs  tf open_manipulator_msgs
 ```
 
 Move to workspace root and build the package
@@ -39,3 +39,5 @@ mkdir scripts
 ```
 
 This folder will hold all the python scripts required by the nodes.
+
+[<< Back to Main menu](../README.md)

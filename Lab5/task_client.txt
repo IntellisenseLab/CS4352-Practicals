@@ -1,0 +1,105 @@
+#!/usr/bin/env python
+
+from __future__ import print_function
+
+import rospy 
+import tf
+
+from open_manipulator_msgs.srv import *
+from open_manipulator_msgs.msg import *
+
+def convert (a, b, c, format):
+    return tf.transformations.quaternion_from_euler(a, b, c, 'r'+format)
+
+def move_in_task_space(x, y, z, roll, pitch, yaw, path_time):
+
+    rospy.wait_for_service('goal_task_space_path')
+
+    try:
+        setJointPath = rospy.ServiceProxy('goal_task_space_path', SetKinematicsPose)
+
+        request =  SetKinematicsPose()
+
+        request.end_effector_name = "gripper"
+
+        quart = convert (roll, pitch, yaw, 'xyz')
+
+        request.kinematics_pose.pose.position.x = x
+        request.kinematics_pose.pose.position.y = y
+        request.kinematics_pose.pose.position.z = z
+
+        request.kinematics_pose.pose.orientation.x = quart[0]
+        request.kinematics_pose.pose.orientation.y = quart[1]
+        request.kinematics_pose.pose.orientation.z = quart[2]
+        request.kinematics_pose.pose.orientation.w = quart[3]
+
+        request.path_time = path_time
+
+        response = setJointPath(request)
+
+        return response.is_planned
+
+    except rospy.ServiceException as e:
+
+        print("Service call failed: %s"%e)
+
+def move_gripper(gripper):
+
+    rospy.wait_for_service('goal_tool_control')
+
+    try:
+        setGripperGap = rospy.ServiceProxy('goal_tool_control', SetJointPosition)
+
+        request =  SetJointPosition()
+
+        request.joint_position.joint_name = ["gripper"]
+        request.joint_position.position = [gripper]
+        request.path_time = path_time
+
+        response = setJointPath(request)
+
+        return response.is_planned
+
+    except rospy.ServiceException as e:
+
+        print("Service call failed: %s"%e)
+
+def activate_actuators(state):
+
+    rospy.wait_for_service('set_actuator_state')
+
+    try:
+
+        activate = rospy.ServiceProxy('set_actuator_state', SetActuatorState)
+        
+        request = SetActuatorState()
+
+        request.set_actuator_state = state
+
+        response =  activate(request)
+
+        return response.is_planned
+
+    except rospy.ServiceException as e:
+
+        print("Service call failed: %s"%e)
+
+if __name__ == "__main__":
+    activate_actuators(True)
+
+    move_in_task_space(0.2, 0.0, 0.0, 0.0, 0.0, 0.0, 2.0)
+    move_gripper(0.00)
+
+    move_in_task_space(0.0, 0.2, 0.0, 0.0, 0.0, 0.0, 5.0)
+    move_gripper(0.05)
+
+    move_in_task_space(0.2, 0.2, 0.0, 0.0, 0.0, 0.0, 2.0)
+    move_gripper(0.10)
+
+    move_in_task_space(0.0, 0.0, 0.0, 0.5, 0.0, 0.0, 5.0)
+    move_gripper(-0.05)
+
+    move_in_task_space(0.0, 0.2, 0.0, 0.0, 0.5, 0.0, 2.0)
+    move_gripper(-0.1)
+
+    activate_actuators(False)

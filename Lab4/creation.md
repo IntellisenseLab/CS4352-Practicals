@@ -39,3 +39,5 @@ mkdir scripts
 ```
 
 This folder will hold all the python scripts required by the nodes.
+
+[<< Back to Main menu](../README.md)

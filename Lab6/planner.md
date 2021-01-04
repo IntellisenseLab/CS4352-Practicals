@@ -17,7 +17,7 @@ to enable execute permission.
 
 ## CMakeLists.txt file modifications
 
-Open lab_6_trajectoryplanner/CMakeLists.txt and add following lines to the bottom of the file.
+Open lab_6_jointTrajectoryPlanner/CMakeLists.txt and add following lines to the bottom of the file.
 
 ```sh
 catkin_install_python(PROGRAMS scripts/planner.py
@@ -58,7 +58,7 @@ cd ~/robotics/
 source devel/setup.bash
 ```
 ```sh
-rosrun lab_6_trajectoryplanner planner.py
+rosrun lab_6_jointTrajectoryPlanner planner.py
 ```
 
 

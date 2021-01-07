@@ -3,7 +3,8 @@
 from __future__ import print_function
 
 import sys
-import rospy 
+import rospy
+import time
 
 from open_manipulator_msgs.srv import *
 from open_manipulator_msgs.msg import *
@@ -15,31 +16,10 @@ def move_in_joint_space(joint1, joint2, joint3, joint4, path_time):
     try:
         setJointPath = rospy.ServiceProxy('goal_joint_space_path', SetJointPosition)
 
-        request =  SetJointPosition()
+        request =  SetJointPositionRequest()
 
         request.joint_position.joint_name = ["joint1", "joint2", "joint3", "joint4"]
         request.joint_position.position = [joint1, joint2, joint3, joint4]
-        request.path_time = path_time
-
-        response = setJointPath(request)
-
-        return response.is_planned
-
-    except rospy.ServiceException as e:
-
-        print("Service call failed: %s"%e)
-
-def move_gripper(gripper):
-
-    rospy.wait_for_service('goal_tool_control')
-
-    try:
-        setGripperGap = rospy.ServiceProxy('goal_tool_control', SetJointPosition)
-
-        request =  SetJointPosition()
-
-        request.joint_position.joint_name = ["gripper"]
-        request.joint_position.position = [gripper]
         request.path_time = path_time
 
         response = setJointPath(request)
@@ -58,11 +38,11 @@ def activate_actuators(state):
 
         activate = rospy.ServiceProxy('set_actuator_state', SetActuatorState)
         
-        request = SetActuatorState()
+        srv = SetActuatorStateRequest()
 
-        request.set_actuator_state = state
+        srv.set_actuator_state = state
 
-        response =  activate(request)
+        response =  activate(srv)
 
         return response.is_planned
 
@@ -71,21 +51,20 @@ def activate_actuators(state):
         print("Service call failed: %s"%e)
 
 if __name__ == "__main__":
-    activate_actuators(True)
 
-    move_in_joint_space(0.0, 0.0, 0.0, 0.0, 2.0)
-    move_gripper(0.00)
+    if activate_actuators(True):
+        print("Activation completed")
+    else:
+        print("Activation failed")
 
-    move_in_joint_space(0.2, 0.0, 0.0, 0.0, 5.0)
-    move_gripper(0.05)
+    if move_in_joint_space(-0.4, 0.2, 0.2, 0.2, 5.0):
+        print("Successfully moved")
+    else:
+        print("Failed to move")
 
-    move_in_joint_space(0.0, 0.2, 0.0, 0.0, 2.0)
-    move_gripper(0.10)
+    time.sleep(6.0)
 
-    move_in_joint_space(0.0, 0.0, 0.0, 0.2, 5.0)
-    move_gripper(-0.05)
-
-    move_in_joint_space(0.0, 0.2, 0.0, 0.0, 2.0)
-    move_gripper(-0.1)
-
-    activate_actuators(False)
+    if activate_actuators(False):
+        print("Deactivation completed")
+    else:
+        print("Deactivation failed")

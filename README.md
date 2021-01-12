@@ -51,8 +51,8 @@ Exercise - [here](/Lab5/activity.md)
 
 ## Lab 6
 
-This lab focuses on creating a service client for joint space control
+This lab focuses on creating a server that implements a joint controller.
 
 Package Creation - [here](/Lab6/creation.md) \
-Client Creation - [here](Lab6/planner.md) \
+Server Creation - [here](Lab6/jplanner.md) \
 Exercise - [here](/Lab6/activity.md)

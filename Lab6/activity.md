@@ -22,34 +22,34 @@ Note: Modify the jclient.py to get the values of polynomial coefficients (a,b,c,
 joint 1 - 0.0\
 joint 2 - 0.0\
 joint 3 - 0.0\
-joint 4 - 0.0\
+joint 4 - 0.0
 
-time    - 5.0\
+time    - 5.0
 
 joint 1 - -0.2\
 joint 2 - 0.0\
 joint 3 - 0.0\
-joint 4 - 0.0\
+joint 4 - 0.0
 
-time    - 5.0\
+time    - 5.0
 
 joint 1 - -0.2\
 joint 2 - 0.4\
 joint 3 - 0.0\
-joint 4 - 0.0\
+joint 4 - 0.0
 
-time    - 5.0\
+time    - 5.0
 
 joint 1 - 0.2\
 joint 2 - -0.2\
 joint 3 - -0.4\
-joint 4 - 0.0\
+joint 4 - 0.0
 
-time    - 5.0\
+time    - 5.0
 
 joint 1 - -0.4\
 joint 2 - 0.2\
 joint 3 - 0.2\
-joint 4 - 0.2\
+joint 4 - 0.2
 
 [<< Back to Main menu](../README.md)

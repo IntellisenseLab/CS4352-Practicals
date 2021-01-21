@@ -54,5 +54,5 @@ Exercise - [here](/Lab5/activity.md)
 This lab focuses on creating a server that implements a joint controller.
 
 Package Creation - [here](/Lab6/creation.md) \
-Server Creation - [here](Lab6/jplanner.md) \
+Server and Client Creation - [here](Lab6/code.md) \
 Exercise - [here](/Lab6/activity.md)

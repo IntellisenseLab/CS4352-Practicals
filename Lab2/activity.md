@@ -57,6 +57,6 @@ First complete all the steps upto now and make sure the system works correctly. 
 1.57, 0.00, 1.57, zyx \
 0.00, 1.57, 1.57, zyx 
 
-## Submit a pdf named lab2_<index>.pdf at the end of the practical along with the zipped modified workspace
+## Submit a pdf named lab2_index.pdf at the end of the practical along with the zipped modified workspace
 
 [<< Back to Main menu](../README.md)

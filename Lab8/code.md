@@ -1,21 +1,25 @@
 # Simulation
 
-First open a terminal window, move to robotics folder, source the devel/setup.bash and start the simulation
+First open a terminal window, move to robotics folder, source the devel/setup.bash and start the gazebo world
 
 ```sh
 source devel/setup.bash
-```
-```sh
-roslaunch rosbot_description rosbot_rviz.launch
+
+roslaunch rosbot_gazebo rosbot_world.launch\
 ```
 
-Then open another terminal window, move to robotics folder, source the devel/setup.bash and start the movebase (Navigation stack)
+Then open another terminal window, move to robotics folder, source the devel/setup.bash and start the rosbot model
+```sh
+source devel/setup.bash
+
+roslaunch rosbot_description rosbot_gazebo.launch
+```
+
+Then open another terminal window, move to robotics folder, source the devel/setup.bash and start the movebase (Navigation stack) and octomap_server
 
 ```sh
 source devel/setup.bash
-```
 
-```sh
 roslaunch rosbot_navigation navigation_demo.launch
 ```
 
@@ -26,7 +30,7 @@ Then open another terminal window, move to robotics folder, source the devel/set
 source devel/setup.bash
 ```
 ```sh
-roslaunch explore explore.launch
+roslaunch explore_lite explore.launch
 ```
 
 [<< Back to Main menu](../README.md)

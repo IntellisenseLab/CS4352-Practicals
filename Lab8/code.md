@@ -1,21 +1,12 @@
 # Simulation
 
-First open a terminal window, move to robotics folder, source the devel/setup.bash and start the gazebo simulation
+First open a terminal window, move to robotics folder, source the devel/setup.bash and start the simulation
 
 ```sh
 source devel/setup.bash
 ```
 ```sh
-roslaunch rosbot_gazebo rosbot_world.launch
-```
-
-Then open another terminal window, move to robotics folder, source the devel/setup.bash and start the rosbot model
-```sh
-source devel/setup.bash
-```
-
-```sh
-roslaunch rosbot_description rosbot_gazebo.launch
+roslaunch rosbot_description rosbot_rviz.launch
 ```
 
 Then open another terminal window, move to robotics folder, source the devel/setup.bash and start the movebase (Navigation stack)

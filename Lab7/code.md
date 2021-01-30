@@ -29,14 +29,14 @@ code costmap_common_params.yaml
 copy following content to it
 
 ```sh
-obstacle_range: 6.0
-raytrace_range: 8.5
+obstacle_range: 3.0
+raytrace_range: 3.5
 footprint: [[0.12, 0.14], [0.12, -0.14], [-0.12, -0.14], [-0.12, 0.14]]
-map_topic: /map
+map_topic: map
 subscribe_to_updates: true
-observation_sources: laser_scan_sensor
-laser_scan_sensor: {sensor_frame: laser, data_type: LaserScan, topic: scan, marking: true, clearing: true}
-global_frame: odom
+observation_sources: pointCloud
+pointCloud: {sensor_frame: camera_rgb_frame, data_type: PointCloud2, topic: camera/depth/points, marking: true, clearing: true, max_obstacle_height: 0.5, min_obstacle_height: 0.0}
+global_frame: map
 robot_base_frame: base_link
 always_send_full_costmap: true
 ```

@@ -62,7 +62,7 @@ Exercise - [here](/Lab6/activity.md)
 This lab focuses on Setting up navigation stack of ROS
 
 Package Creation - [here](/Lab7/creation.md) \
-Package Configuration - [here](Lab7/code.md) \
+Navigation Stack Configuration - [here](Lab7/code.md) \
 Exercise - [here](/Lab7/activity.md)
 
 ## Lab 8
@@ -70,5 +70,5 @@ Exercise - [here](/Lab7/activity.md)
 This lab focuses on setting up and using Explore-Lite along with navigation stack
 
 Package Creation - [here](/Lab8/creation.md) \
-Simulation - [here](Lab8/code.md) \
+Explore-Lite Configuration - [here](Lab8/code.md) \
 Exercise - [here](Lab8/activity.md)

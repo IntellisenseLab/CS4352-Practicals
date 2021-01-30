@@ -14,8 +14,6 @@ mkdir config
 cd config
 ```
 
-<br>
-
 ## Robot Dimensions
 
 ![](ROSbot-dim-bold.jpg)
@@ -43,8 +41,6 @@ robot_base_frame: base_link
 always_send_full_costmap: true
 ```
 
-<br>
-
 ## global_costmap_params
 
 Create a new file inside config folder called global_costmap_params.yaml
@@ -70,8 +66,6 @@ global_costmap:
   resolution: 0.01
 ```
 
-<br>
-
 ## local_costmap_params
 
 Create a new file inside config folder called local_costmap_params.yaml
@@ -96,8 +90,6 @@ local_costmap:
   resolution: 0.01
   inflation_radius: 1.0
 ```
-
-<br>
 
 ## trajectory_planner
 
@@ -128,7 +120,6 @@ TrajectoryPlannerROS:
  pdist_scale: 0.4
  gdist_scale: 0.2
 ```
-
 
 ## launch file
 

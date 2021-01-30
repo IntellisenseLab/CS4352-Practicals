@@ -36,4 +36,12 @@ Open a terminal and run the following command.
 sudo apt-get install ros-melodic-octomap*
 ```
 
+# Install ROS Navigation stack
+
+Run the following command on the terminal
+
+```sh
+sudo apt-get install ros-melodic-navigation
+```
+
 [<< Back to Main menu](../README.md)

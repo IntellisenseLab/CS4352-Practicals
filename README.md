@@ -54,7 +54,7 @@ Exercise - [here](/Lab5/activity.md)
 This lab focuses on creating a server that implements a joint controller.
 
 Package Creation - [here](/Lab6/creation.md) \
-Server and Client Creation - [here](Lab6/code.md) \
+Impelmentation - [here](Lab6/code.md) \
 Exercise - [here](/Lab6/activity.md)
 
 ## Lab 7
@@ -62,7 +62,7 @@ Exercise - [here](/Lab6/activity.md)
 This lab focuses on Setting up navigation stack of ROS
 
 Package Creation - [here](/Lab7/creation.md) \
-Server and Client Creation - [here](Lab7/code.md) \
+Package Configuration - [here](Lab7/code.md) \
 Exercise - [here](/Lab7/activity.md)
 
 ## Lab 8
@@ -70,5 +70,5 @@ Exercise - [here](/Lab7/activity.md)
 This lab focuses on setting up and using Explore-Lite along with navigation stack
 
 Package Creation - [here](/Lab8/creation.md) \
-Server and Client Creation - [here](Lab8/code.md) \
+Simulation - [here](Lab8/code.md) \
 Exercise - [here](Lab8/activity.md)

@@ -4,10 +4,7 @@ Move to src folder and clone the repository
 
 ```sh
 cd robotics/src
-```
-and run,
 
-```sh
 git clone https://github.com/hrnr/m-explore.git
 ```
 

@@ -42,6 +42,7 @@ Run the following command on the terminal
 
 ```sh
 sudo apt-get install ros-melodic-navigation
+sudo apt-get install ros-melodic-teb-local-planner
 ```
 
 [<< Back to Main menu](../README.md)

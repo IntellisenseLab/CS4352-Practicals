@@ -1,4 +1,4 @@
-# Client Planner Python Implementation
+# Navigation Stack Configuration
 
 <br>
 

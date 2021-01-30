@@ -1,43 +1,31 @@
 # Package Creation
 
-Move inside the ROS workspace and Create a ros package that depends on rospy, roscpp, std_msgs, sensor_msgs, open_manipulator_msgs.
-
-Assuming workspace name is 'robotics'
+Move to src folder and clone the repository
 
 ```sh
 cd robotics/src
 ```
+and run,
 
 ```sh
-catkin_create_pkg lab_6_jointTrajectoryPlanner rospy roscpp std_msgs sensor_msgs open_manipulator_msgs
+git clone https://github.com/hrnr/m-explore.git
 ```
 
-Move to workspace root and build the package
+to install dependencies, move to root of the workspace and run,
 
 ```sh
 cd ..
+
+rosdep install --from-paths src --ignore-src -r -y
 ```
+then run 
 
 ```sh
 catkin build
 ```
-
-or 
-
+or
 ```sh
 catkin_make
 ```
-
-move inside the package and create a folder called scripts
-
-```sh
-cd robotics/src/lab_6_jointTrajectoryPlanner
-```
-
-```sh
-mkdir scripts
-```
-
-This folder will hold all the python scripts required by the nodes.
 
 [<< Back to Main menu](../README.md)

@@ -8,7 +8,7 @@ cd robotics/src
 and run,
 
 ```sh
-git clone https://github.com/husarion/rosbot_description.git
+git clone https://github.com/IntellisenseLab/CS4352-Practicals-Rosbot.git rosbot_description
 ```
 
 to install dependencies, move to root of the workspace and run,

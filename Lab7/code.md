@@ -7,9 +7,11 @@
 Move to rosbot_navigation inside rosbot_decription/src and create folder name config
 
 ```sh
-cd rosbot_description/src/rosbot_navigation
+cd src/rosbot_description/src/rosbot_navigation
 
 mkdir config
+
+cd config
 ```
 
 <br>
@@ -132,7 +134,7 @@ TrajectoryPlannerROS:
 Create a new file inside config folder called single_rosbot.rviz
 
 ```sh
-code trajectory_planner.rviz
+code single_rosbot.rviz
 ```
 
 copy following content to it
@@ -256,6 +258,11 @@ Window Geometry:
 ## launch file
 
 Create a new file inside launch folder called navigation_demo.launch
+
+```sh
+cd ..
+cd launch
+```
 
 ```sh
 code navigation_demo.launch

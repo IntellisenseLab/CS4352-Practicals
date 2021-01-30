@@ -1,4 +1,4 @@
-# Modification
+# Explore-Lite Configuration
 
 Move to m-explore/explore/launch folder and create a new launch file named activity.launch
 

@@ -32,7 +32,7 @@ First open a terminal window, move to robotics folder, source the devel/setup.ba
 ```sh
 source devel/setup.bash
 
-roslaunch rosbot_gazebo rosbot_world.launch\
+roslaunch rosbot_gazebo rosbot_world.launch
 ```
 
 Then open another terminal window, move to robotics folder, source the devel/setup.bash and start the rosbot model

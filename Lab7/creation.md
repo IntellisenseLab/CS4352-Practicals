@@ -28,4 +28,12 @@ or
 catkin_make
 ```
 
+# Install Octomap
+
+Open a terminal and run the following command.
+
+```sh
+sudo apt-get install ros-melodic-octomap*
+```
+
 [<< Back to Main menu](../README.md)

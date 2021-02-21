@@ -72,3 +72,19 @@ This lab focuses on setting up and using Explore-Lite along with navigation stac
 Package Creation - [here](/Lab8/creation.md) \
 Explore-Lite Configuration - [here](Lab8/code.md) \
 Exercise - [here](Lab8/activity.md)
+
+## Lab 9
+
+This lab focuses on localization and combines gmapping with navigation stack
+
+Gmapping Configuration - [here](Lab9/configuration.md) \
+Mapping and Navigation - [here](Lab9/code.md) \
+Exercise - [here](Lab9/activity.md)
+
+## Lab 10
+
+This lab focuses on creating a ROS based control system for a Drone.
+
+Package Configuration - [here](Lab10/configuration.md) \
+Controller creation - [here](Lab10/code.md) \
+Exercise - [here](Lab10/activity.md)

@@ -144,6 +144,12 @@ Move into PX4-Autopilot folder and run,
 make px4_sitl jmavsim
 ```
 
+If the build process fails or hangs before startin jMAVSim, try running the following command,
+
+```sh
+sudo apt-get install ant 
+```
+
 Then run following command to operate the drone.
 
 ```sh

@@ -20,7 +20,7 @@ PX4/
     Fast-RTPS-Gen/    
 ```
 
-## Install PX$ FlightStack/Autopilot system
+## Install PX4 FlightStack/Autopilot system
 
 ```sh
 cd PX4

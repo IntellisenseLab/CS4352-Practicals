@@ -143,13 +143,6 @@ Move into PX4-Autopilot folder and run,
 ```sh
 make px4_sitl jmavsim
 ```
-
-If the build process fails or hangs before startin jMAVSim, try running the following command,
-
-```sh
-sudo apt-get install ant 
-```
-
 Then run following command to operate the drone.
 
 ```sh
@@ -173,6 +166,15 @@ Then run following command to operate the drone.
 ```sh
 commander takeoff   #To takeoff
 ```
+
+## Known Issues
+
+Sometimes jMAVSim launch hangs withoup opening and log mentions a missing ant command. If thats the case, run,
+
+```sh
+sudo apt-get install ant 
+```
+
 
 This is based on the [PX4 guide](https://docs.px4.io/master/en/ros/mavros_installation.html)
 

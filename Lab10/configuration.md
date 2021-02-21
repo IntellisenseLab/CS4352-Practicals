@@ -2,7 +2,23 @@
 
 This practical depends on PX4 as Flightstack and Mavlink as communication stack. This implements a controller that works alogside MAVROS to guide the drone.
 
-Create a new folder called PX4 inside home directory
+Create a new folder called PX4 inside home directory. At the end Folder structure should look like,
+
+```sh
+PX4/
+    px4_ros/
+    PX4-Autopilot/
+    FastDDS-1.8.2/
+    Fast-RTPS-Gen/
+    
+    or
+    
+PX4/
+    px4_ros/
+    PX4-Autopilot/
+    FastDDS-2.0.0/
+    Fast-RTPS-Gen/    
+```
 
 ## Install PX$ FlightStack/Autopilot system
 
@@ -53,7 +69,7 @@ git clone --recursive https://github.com/eProsima/Fast-DDS-Gen.git -b v1.0.4 Fas
     && ./gradlew assemble \
     && sudo ./gradlew install
 ```
-## Ros related setup
+## ROS related setup
 
 Create and Move to a new subfolder folder run the following commands,
  

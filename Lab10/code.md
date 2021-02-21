@@ -2,7 +2,7 @@
 
 ## Package Creation
 
-Create a package with depenedencies on mavros, mavros_msgs, geometry_msgs and roscpp
+Move inside px4_ros/src and create a package inside with depenedencies on mavros, mavros_msgs, geometry_msgs and roscpp
 
 ```sh
 catkin_create_pkg lab10_offboardcontrol roscpp mavros mavros_msgs geometry_msgs

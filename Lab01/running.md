@@ -173,9 +173,6 @@ Move to the root of the ROS workspace and launch the program
 roslaunch lab_1_tf broadcaster_listener_demo.launch
 ```
 
-
-
-<br>
 <br>
 
 ## Creating launch file for Static Frame
